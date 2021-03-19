@@ -1,5 +1,4 @@
 
-
 <div align = 'center'>
   <h1>HACK NITR </> 2021</h1>
 </div>
