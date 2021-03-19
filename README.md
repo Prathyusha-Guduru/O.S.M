@@ -5,7 +5,8 @@
 
 <div align="center">
   <h1>O.S.M</h1>
-<!--   <img src = '#' width = 250> -->
+  <img src = 'syringe_logo.png'>
   <p>Our Smart Medico 🏥</p>
   <p>Immune 🩺 and Inspire 💙</p>
 </div>
+
