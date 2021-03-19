@@ -7,4 +7,5 @@
   <h1>O.S.M</h1>
 <!--   <img src = '#' width = 250> -->
   <p>Our Smart Medico 🏥</p>
+  <p>Immune 🩺 and Inspire 💙</p>
 </div>
