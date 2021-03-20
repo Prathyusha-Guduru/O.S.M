@@ -29,6 +29,9 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 * Amazingly smooth UI for extraordinary user experience.
 <br>
 
+## How does our application looks like ? 
+
+
 
 ## Challengers we came across : 
 * Integrating Machine learning models into our web app.
