@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+      body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url("https://www.presentationmagazine.com/powerpoint-templates/2/1/21868057/womens's-health-powerpoint-template_1.jpg");
+
+    /* Full height */
+    height: 700px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  border-bottom: double;
+  text-align: center;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+
+.tablink {
+    background-color: #FEA127;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: green;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    width: 855px;
+    position: relative;
+    height: 350px;
+}
+
+#footer{background-color: black;
+text-decoration: underline;
+text-align: center;
+font-family: sans-serif;
+text-decoration-color: white;
+color: white;
+align-self: bottom;}
+#Symptom {background-color:#78A9FD; width: 600px; top:55px ;left: 400px;height:450px;}
+      
+    </style>
+
+  </head>
+  <body>
+    {% block body%}
+    <div class="bg"> 
+      <br>
+      <div>
+      <center>
+      <span style="font-size:40px; text-shadow: 3px 3px 6px dark pink;font-weight: bold;font-family:'Consolas';color:blue">Feeling Unhealthy? Check your Disease here!</span></center>
+      </div>
+      <br>
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-center" style="font-size:20px; background-color:none;">
+              <li class=""><button style="background:none;border:none;padding:10px"><a href="/">Reload</a></button></li>
+              <!-- <li class=""><a href="#">ABOUT US</a></li> -->
+            </ul>
+          </div>
+        </nav>
+    <div>
+        <button class="tablink" onclick="openTab('Symptom', this, 'red')" id="defaultOpen" style="width: 600px; position: absolute; top: 175px; left:400px; ">What are your Symptoms?</button>
+        <!-- <button class="tablink" onclick="openTab('Drug', this, 'red')" id="drugdetail" style="width: 200px; position: absolute; top: 175px; left:450px; ">Know My Drug</button> -->
+</div>
+
+<div id="Symptom" class="tabcontent">
+  <form name="SymptomForm" id="SymForm" method="POST" action=/disease_predict>
+    <div class="head">
+
+    </div>
+    <div class="form-group">
+      <!-- <select multiple data-role="tagsinput" class="form-control" size=1>
+          {% for symp in symptoms  %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </select> -->
+      <label for="Symptom1" align="left">Symptom1</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom2" align="left">Symptom2</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom3" align="left">Symptom3</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom4" align="left">Symptom4</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom5" align="left">Symptom5</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+    </div>
+    
+    <button type="submit" class="btn btn-primary" style="padding: 10px; " name=form>Check</button>
+</form>
+</div>
+
+
+
+
+
+
+<script>
+
+  
+function openTab(tabName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+    {% endblock %}
+  </body>
+</html>
