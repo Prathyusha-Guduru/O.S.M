@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		main {
+			height: 100vh;
+			width: 100vw;
+			background-color: #fadbda;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.menstrual-container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.menstrual-content {
+			width: 45%;
+			margin-right: 130px;
+		}
+
+		h3 {
+			margin: 20px 0 50px 0;
+			font-weight: 700;
+			font-size: 1.6rem;
+			text-align: justify;
+		}
+
+		h1 {
+			font-size: 4.5rem;
+			font-weight: 700;
+		}
+
+		p {
+			text-align: justify;
+			font-size: 1.2rem;
+			line-height: 1.7rem;
+		}
+
+		.btn {
+			margin-top: 30px;
+			padding: 10px 15px;
+			background-color: rgba(0, 0, 0, 0);
+
+			outline: none;
+			border: 2px solid #222;
+
+			color: #222;
+			text-transform: uppercase;
+			font-weight: 600;
+
+			transition-duration: 400ms;
+		}
+
+		.btn:hover {
+			background-color: #222;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		img {
+			height: 60vh;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<div class="menstrual-container">
+			<div class="menstrual-content">
+				<h1>Healthy Periods</h1>
+				<h3>Even though periods are a normal and natural part of a woman’s life, many women find that their
+					periods are an intrusion or an interruption to their day-to-day life.</h3>
+				<p>
+
+					It might be that your periods just make you feel a bit run down, or tired. You may have belly aches
+					and pains, nothing too serious but enough to want to spend the day on the couch with a hot water
+					bottle. Serious pain and heavy bleeding should be investigated by a doctor, but low level discomfort
+					can be avoided by making a number of lifestyle changes. A healthy diet, avoiding salt in your
+					cooking and food, reducing caffeine intake, restoring your sleep cycle, regular daily exercise and
+					reducing stress may help improve your quality of life and significantly reduce the severity of PMS
+					symptoms, including reducing moodiness and painful periods. </p>
+
+				<a href="{{url_for('health.period_tracker')}}"><button class="btn">Track Periods</button></a>
+			</div>
+			<div class="menstrual-image">
+				<img src="/static/uterus.png" alt="">
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

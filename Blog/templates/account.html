@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="account-container">
+	<div>
+		<label for="">Email</label>
+		<p>{{current_user.email}}</p>
+	</div>
+	<div>
+		<label for="">Username</label>
+		<p>{{current_user.username}}</p>
+	</div>
+</div>
+{% endblock %}

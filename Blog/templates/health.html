@@ -1,0 +1,54 @@
+{% block head %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static',filename = 'stylesheet_health.css')}}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>Document</title>
+</head>
+
+{% endblock %}
+
+
+<body>
+	{% block navbar %}
+	<nav>
+		<a href="{{url_for('core.index')}}"> <img class='navbar-brand' src="/static/syringe_logo.png" alt=""
+				height="72">
+		</a>
+	</nav>
+	{% endblock %}
+	<div class="main-container">
+		<div class="container">
+
+			<div class="content">
+				<div class="text">
+					{% block text_content %}
+					<h1 class="heading">What do you want to check ?</h1>
+					<nav class="menu">
+						<a href="{{url_for('health.mental_health')}}" class="nav-item">Mental Health</a>
+						<a href="#" class="nav-item">Breast Cancer</a>
+						<a href="#" class="nav-item">Covid-19</a>
+						<a href="{{url_for('health.menstrual_health')}}" class="nav-item">Menstrual Health</a>
+						<a href="#" class="nav-item">Common Diseases</a>
+					</nav>
+					{% endblock %}
+				</div>
+			</div>
+
+			<div class="image">
+				{% block image %}
+				<img src="/static/nurse_health_image.png" alt="" class="women_health_image">
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

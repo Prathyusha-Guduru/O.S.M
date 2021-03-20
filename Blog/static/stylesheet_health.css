@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: #d3e0ea;
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+	position: relative;
+	top: 15px;
+	left: 20px;
+}
+
+.navbar-brand:hover{
+	transform: scale(1.2);
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	position: relative;
+	top: 100px;
+}
+
+.content{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 100px;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+}
+
+
+a,a:visited,a:active{
+	text-decoration: none;
+	color: #000;
+}
+
+nav.menu{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.nav-item{
+	font-weight: 700;
+	font-size: 3rem;
+	-webkit-text-stroke: 1.2px black;
+	color: rgba(0, 0, 0, 0);
+	transition-duration: 400ms;
+}
+
+.nav-item:hover{
+	color: unset;
+}
+
+.text{
+	width: 90%;
+	height: 90%;
+	
+}
+
+.image{
+	width: 40%;
+}
+
+
+
+.menu{
+	list-style-type: none;
+}
+
+
+.mental-health-image{
+	position: relative;
+	bottom: 200px;
+	position: fixed;
+}
+
+.mental-health-questions{
+	position: relative;
+	bottom: 100px;
+}
+
+.title{
+	margin: 0 0 40px 0;
+}
+
+.question{
+	font-weight: 800;
+	margin: 10px 0;
+}
+
+.answers{
+	display: block;
+}
+
+
+
+input[type='radio']:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	display: inline-block;
+	visibility: visible;
+	/* border: 2px solid white; */
+	border: none;
+	margin-right: 10px;
+}
+
+input[type='radio']:checked:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #2596be;
+	
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+	margin-right: 20px;
+}
+
+#submit{
+	background-color: #d3e0ea;
+	color: #2596be;
+	border: 1px solid #2596be;
+	padding: 5px 30px;
+	border-radius: 3px;
+	position: relative;
+	top: 20px;
+}
+
+#submit:hover{
+	color: #d3e0ea;
+	background-color: #2596be;
+	border: 1px solid #d3e0ea;
+}
+
+#results{
+	margin-top: 30px;
+}
+
+.heading{
+	font-size: 4rem;
+}
+
+h2{
+	color: green;
+}

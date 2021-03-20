@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<main>
+		<div class="periods-image">
+			<img src="/static/period_tracker.png" alt="" width="700">
+		</div>
+		<div class="periods-content">
+			<h1>Come let's track your periods <span>.</span></h1>
+			<form action="">
+				<label for="prev-date">When was your last period ?</label>
+				<input type="date" name="prev-date" id="">
+				<br>
+				<label for="duration">For how long did it last ?</label>
+				<input type="number" name="duration" id="">
+				<br>
+				<label for="cycle">How long is your menstrual cycle?</label>
+				<input type="number">
+				<br>
+
+				<button type="submit">Check</button>
+			</form>
+		</div>
+	</main>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		main {
+			height: 100vh;
+			width: 100vw;
+			background-color: #fadbda;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-direction: column;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.periods-content {
+			/* background-color: aquamarine; */
+			width: 70%;
+			position: relative;
+			bottom: 100px;
+		}
+
+		.periods-image {
+			position: relative;
+			bottom: 100px;
+		}
+
+		span {
+			color: #c7212d
+		}
+	</style>
+</body>
+
+</html>

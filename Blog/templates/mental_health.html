@@ -1,0 +1,24 @@
+{% extends 'health.html' %}
+{% block text_content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="mental-health-questions">
+	<div class="title">
+		<h1>Mental Health Quiz</h1>
+		<h4>Take your time to think but answer all the questions honestly</h4>
+		<h4>There are no right or wrong answers</h4>
+	</div>
+	<div id="quiz"></div>
+	<button id="submit">Submit</button>
+	<div id="results"></div>
+
+</div>
+
+{% endblock %}
+{% block image %}
+<div class="image-container">
+	<img class="mental-health-image" src="/static/mental_health.png" alt="">
+</div>
+<script src="{{url_for('static',filename = 'script.js')}}"></script>
+
+
+{% endblock %}

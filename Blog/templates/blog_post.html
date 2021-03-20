@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{title}}</h1>
+<h2>Written by: {{author.username}}</h2>
+<h3>Published: {{date.strftime('%B %d %Y')}}</h3>
+<p>{{post.text}}</p>
+
+{% if access %}
+<div>
+	<a href="{{url_for('blog_posts.update',blog_post_id = post.id)}}">Update</a>
+	<button class="btn btn-danger" data-toggle='modal' data-target='#del_modal'>Delete</button>
+	<div class="modal" tabindex="-1" id='del_modal'>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Delete Post ?</h5>
+					<button type="buttons" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Post will be permenantly deleted.Click delete if you want to continue.</p>
+				</div>
+				<div class="modal-footer">
+					<form action="{{url_for('core.index')}}" method='POST'>
+						<input type="submit" value="Cancel" class="btn btn-secondary">
+					</form>
+					<form action="{{url_for('blog_posts.delete_post',blog_post_title = title,blog_post_id = post.id)}}"
+						method='POST'>
+						<input type="submit" value="Delete" class="btn btn-danger">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+{% endblock %}

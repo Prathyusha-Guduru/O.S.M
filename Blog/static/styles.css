@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	height: 100vh;
+	width: 100vw;
+	/* background: rgb(164,235,243);
+	background: linear-gradient(95deg, rgba(164,235,243,1) 32%, rgba(168,236,243,1) 33%, rgba(244,249,249,1) 72%);  */
+	background-color: #d3e0ea;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.navbar-brand{
+	position: relative;
+	top : 20px;
+}
+
+
+.container-fluid{
+	/* background-color: lightcoral; */
+	display: flex;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.forum{
+	position: relative;
+	top: 80px;
+}
+
+.card{
+	/* background-color: #93c4d6; */
+	background-color: #d3e0ea;
+	margin: 10px 0px;
+}
+
+.btn{
+	background-color: #d3e0ea;
+	color: #2596be;
+	border: 1px solid #2596be;
+}
+
+.btn:hover{
+	color: #d3e0ea;
+	background-color: #2596be;
+	border: 1px solid #d3e0ea;
+}
+
+
+
+.text{
+	width: 50%;
+	/* background-color: lightyellow; */
+	margin: 0px 0px 0px 50px;
+	position: relative;
+	bottom: 40px;
+	color: #282434;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.image{
+	width: 50%;
+	position: relative;
+	bottom: 50px;
+	height: 730px;
+
+}
+
+.title{
+	font-size: 150px;
+	font-weight: 700;
+}
+
+span{
+	font-weight: 700;
+}
+
+.tagline{
+	font-size: 50px;
+	font-weight: 400;
+	position: relative;
+	left: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #282434;
+}
+
+nav{
+	margin: 0px 0px 0px 30px;
+}
+.navbar-nav{
+	margin: 30px 0px 0px 110px;
+	font-size: 18px;
+}
+
+li{
+	margin: 0 30px;
+	transition-duration: 0.5s;
+}
+
+li:hover{
+	
+	transform: scale(1.1);
+	color: #2596be;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.navbar-brand{
+	/* background-color: aqua; */
+	padding: 0;
+	height: 100px;
+	position: absolute;
+	margin: 0 30px 0 0;
+}
+
+.health_page{
+	background-color: #f1e3d3;
+	height: 100vh;
+	width: 100vw;
+}
+
+#text{
+	height: 300px;
+}
+
+.label{
+	font-weight: 700;
+}
+
+.create-post-container{
+	position: relative;
+	top: 50px;
+
+}
+
+/* .outer-account-container{
+	background-color: #fff;
+	height: 80vh;
+	position: relative;
+	top: 30px;
+	display: flex;
+	width: 80%;
+	padding: 30px;
+}
+
+.profile-card-container{
+	background-color: lightcoral;
+	width: 50%;
+	text-align: left;
+	padding: 20px 0;
+}
+
+.profile-picture{
+	width: 200px;
+	margin: 10px;
+} */
