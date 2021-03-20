@@ -17,7 +17,7 @@
 }
 .bg { 
     /* The image used */
-    background-image: url("https://www.presentationmagazine.com/powerpoint-templates/2/1/21868057/womens's-health-powerpoint-template_1.jpg");
+    background-color: #77bfd9;
 
     /* Full height */
     height: 700px;
@@ -48,7 +48,7 @@
 }
 
 .tablink {
-    background-color: #FEA127;
+ 
     color: white;
     float: left;
     border: none;
@@ -72,16 +72,18 @@
     position: relative;
     height: 350px;
 }
+button{
+border:none;
+font-size:20px;
+background-color:transparent;
+text-decoration:none;
+}
 
-#footer{background-color: black;
-text-decoration: underline;
-text-align: center;
-font-family: sans-serif;
-text-decoration-color: white;
-color: white;
-align-self: bottom;}
-#Symptom {background-color:#78A9FD; width: 600px; top:55px ;left: 400px;height:450px;}
-      
+
+#Symptom {
+background-color:#78A9FD; width: 600px; top:55px ;left: 320px;height:450px;}
+
+
     </style>
 
   </head>
@@ -91,21 +93,22 @@ align-self: bottom;}
       <br>
       <div>
       <center>
-      <span style="font-size:40px; text-shadow: 3px 3px 6px dark pink;font-weight: bold;font-family:'Consolas';color:blue">Feeling Unhealthy? Check your Disease here!</span></center>
+      <span style="font-size:40px; text-shadow: 3px 3px 6px dark pink;font-weight: bold;font-family: 'Montserrat';color:#172A3A">Feeling Unhealthy? Check your Disease here!</span></center>
       </div>
       <br>
-      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <nav class="navbar navbar-light" >
           <div class="container-fluid">
-            <ul class="nav navbar-nav navbar-center" style="font-size:20px; background-color:none;">
-              <li class=""><button style="background:none;border:none;padding:10px"><a href="/">Reload</a></button></li>
+            <ul class="nav navbar-nav navbar-center" style="font-size:27px; background-color:none;">
+              <li class=""><button style="background-color:none;font-family: 'Montserrat';"><a href="/">Reload</a></button></li>
               <!-- <li class=""><a href="#">ABOUT US</a></li> -->
             </ul>
           </div>
         </nav>
     <div>
-        <button class="tablink" onclick="openTab('Symptom', this, 'red')" id="defaultOpen" style="width: 600px; position: absolute; top: 175px; left:400px; ">What are your Symptoms?</button>
+        <button class="tablink" onclick="openTab('Symptom', this, '#276678')" id="defaultOpen" style="width: 600px; position: absolute; top: 175px; left:320px;font-family: 'Montserrat' ">What are your Symptoms?</button>
         <!-- <button class="tablink" onclick="openTab('Drug', this, 'red')" id="drugdetail" style="width: 200px; position: absolute; top: 175px; left:450px; ">Know My Drug</button> -->
 </div>
+
 
 <div id="Symptom" class="tabcontent">
   <form name="SymptomForm" id="SymForm" method="POST" action=/disease_predict>
