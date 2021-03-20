@@ -31,7 +31,14 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 
 ## How does our application looks like ? 
 
-
+<img src = "home-page.png">
+<br>
+<img src = "health-page.png">
+<br>
+<img src = "menstrual-page.png">
+<br>
+<img src = "mental-health.png">
+<br>
 
 ## Challengers we came across : 
 * Integrating Machine learning models into our web app.
