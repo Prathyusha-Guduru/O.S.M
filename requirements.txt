@@ -17,6 +17,7 @@ Flask-Login
 Flask-Migrate
 Flask-SQLAlchemy 
 Flask-WTF
+flask-login
 itsdangerous
 jedi
 Jinja2 
