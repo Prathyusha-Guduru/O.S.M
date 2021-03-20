@@ -43,7 +43,7 @@ pypiwin32
 python-dateutil
 python-editor
 pytz
-pywin32
+
 pyzmq
 qrcode
 requests
