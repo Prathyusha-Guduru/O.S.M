@@ -40,7 +40,7 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 <img src = "mental-health.png">
 <br>
 
-## Challengers we came across : 
+## Challenges we came across : 
 * Integrating Machine learning models into our web app.
 * Implementing User authentication and handling database.
 * Transferring data from flask to javaScript.
