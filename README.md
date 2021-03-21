@@ -22,11 +22,12 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 ## Our Features : 
 
 
-* A forum for all users to post and read about embarassing yet important dobuts on bodies.
-* Highly accurate machine learning models for common diseases prediction according to symptoms,Covid-19 and Melanoma detection using X-Rays.
-* Mental Health quizzes which would help a person know if he/she has any symptoms of a mental health disorder.
+* A forum 📝 for all users to post and read about embarassing yet important dobuts on bodies.
+* Highly accurate machine learning models 💻 for common diseases prediction according to symptoms,Covid-19 and Melanoma detection using X-Rays.
+* Mental Health quizzes 🧠 which would help a person know if he/she has any symptoms of a mental health disorder.
 * A unique QR Code for all users storing their medical history.
-* Amazingly smooth UI for extraordinary user experience.
+* A Menstrual Health Tracker for all the women.🔴
+* Amazingly smooth UI for extraordinary user experience.💥
 <br>
 
 ## How does our application looks like ? 
