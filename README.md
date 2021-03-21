@@ -45,17 +45,17 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 
 <div align = 'center'>
 
-<img src = "common-diseases-page.png" width = '300'>
+<img src = "common-diseases-page.png" width = '500'>
 &nbsp;
 &nbsp;
-<img src = "account-page.png" width = '300'>
+<img src = "account-page.png" width = '500'>
 </div>
 <div align='center'>
 
-<img src = "blog-page.png" width = '300'>
+<img src = "blog-page.png" width = '500'>
 &nbsp;
 &nbsp;
-<img src = "post-page.png" width = '300'>
+<img src = "post-page.png" width = '500'>
 </div>
 
 ## Challenges we came across : 
