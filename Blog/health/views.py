@@ -19,6 +19,8 @@ def menstrual_health():
 
 @health.route('/period_tracker',methods = ['GET','POST'])
 def period_tracker():
-	return render_template('period_tracker.html')
+	print('tracking periods')
+	return render_template('/period-tracker/period_tracker.html')
+
 
 
