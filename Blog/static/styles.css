@@ -147,7 +147,7 @@ a:hover{
 
 }
 
-/* .outer-account-container{
+.outer-account-container{
 	background-color: #fff;
 	height: 80vh;
 	position: relative;
@@ -158,13 +158,25 @@ a:hover{
 }
 
 .profile-card-container{
-	background-color: lightcoral;
+	/* background-color: lightcoral; */
 	width: 50%;
 	text-align: left;
-	padding: 20px 0;
+	padding: 20px 50px;
+	border-right: 1px solid #000;
 }
 
 .profile-picture{
-	width: 200px;
+	width: 400px;
 	margin: 10px;
-} */
+	border: 1px solid black;
+}
+
+.profile-text-container{
+	margin: 20px 10px;
+}
+
+.qrcode{
+	margin-left: 30px;
+	position: relative;
+	top: 30px;
+}

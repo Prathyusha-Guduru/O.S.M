@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="account-container">
-	<div>
-		<label for="">Email</label>
-		<p>{{current_user.email}}</p>
+<div align='center'>
+	<!-- <h1>Welcome, {{current_user.username}}</h1> -->
+	<div class="outer-account-container">
+		<div class="profile-card-container">
+			<img src="/static/profile_pics/default.jpg" alt="" class="profile-picture">
+			<div class="profile-text-container">
+				<h4>Email : {{current_user.email}}</h4>
+				<h4>Username : {{current_user.username}}</h4>
+				<h4>Blood type : A+ve</h4>
+				<h4>Allergy to a drug : None</h4>
+
+			</div>
+		</div>
+		<div class="qrcode">
+			<img src="/static/qrcode.jpg" alt="">
+		</div>
 	</div>
-	<div>
-		<label for="">Username</label>
-		<p>{{current_user.username}}</p>
-	</div>
+
 </div>
+
 {% endblock %}
