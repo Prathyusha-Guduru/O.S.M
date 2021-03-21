@@ -1,7 +1,9 @@
 * {
 	font-family: sans-serif;
 }
-
+body{
+	background-color: #fadbda;
+}
 .calendar-container {
 	width: 100%;
 	padding: 80px 0;
