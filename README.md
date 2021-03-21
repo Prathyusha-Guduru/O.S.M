@@ -40,6 +40,23 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 <br>
 <img src = "mental-health.png">
 <br>
+<img src = "period-tracker.png">
+<br>
+
+<div align = 'center'>
+
+<img src = "common-diseases-page.png" width = '300'>
+&nbsp;
+&nbsp;
+<img src = "account-page.png" width = '300'>
+</div>
+<div align='center'>
+
+<img src = "blog-page.png" width = '300'>
+&nbsp;
+&nbsp;
+<img src = "post-page.png" width = '300'>
+</div>
 
 ## Challenges we came across : 
 * Integrating Machine learning models into our web app.
