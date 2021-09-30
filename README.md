@@ -1,7 +1,7 @@
 
-<div align = 'center'>
+<!-- <div align = 'center'>
   <h1>HACK NITR </> 2021</h1>
-</div>
+</div> -->
 
 <div align="center">
   <h1>O.S.M</h1>
