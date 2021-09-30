@@ -79,7 +79,7 @@ Among all the deaths that occur in the Emergency departments, 23.8% were due to 
 <br>
 
 
-## Team Members (Coding Divas) :
+## Team Members :
 
 * Padmaja Buggaveeti
 * Prathyusha Guduru
